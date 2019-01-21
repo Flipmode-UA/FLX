@@ -28,13 +28,12 @@
 		padding: 0;
 	}
 	.tm-content-box.flex-2-col > div {
-		padding-left: 25px;
+		padding: 0 15px;
 		width: 70%;
 	}
 	.tm-content-box.flex-2-col {
 		display: flex;
 		flex-direction: row;
-		align-items: stretch;
 	}
 	.tm-content-box.flex-2-col img {
 		width: 80%;
@@ -46,6 +45,10 @@
 	}
 }
 @media screen {
+	.tm-content-box.flex-2-col {
+		display: flex;
+		flex-direction: row;
+	}
 /*--- TASK 2 ---*/
 	.box-bg h2:hover {
 		background-color: #87CEFA;
