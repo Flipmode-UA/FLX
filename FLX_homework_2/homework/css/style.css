@@ -1,0 +1,168 @@
+/*--- TASK 1 ---*/
+@media print {
+	.tm-sidebar, #about, .heading.tm-content-box, .blocks, #ideas, section.tm-content-box {
+		display: none;
+	}
+	p:first-letter {
+		color: #87CEFA;
+		font-size: 30px;
+	}
+	p:not(.tm-banner-text) {
+		line-height: 2em;
+		text-indent: 1.5em;
+	}
+	.tm-main-content {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.tm-banner {
+		width: 90%;
+		padding: 0;
+		margin: 20px 0;
+	}
+	.tm-section-title {
+	color: #3104B4;
+	}
+	.tm-content-box.flex-2-col div {
+		margin: 0;
+		padding: 0;
+	}
+	.tm-content-box.flex-2-col > div {
+		padding-left: 25px;
+		width: 70%;
+	}
+	.tm-content-box.flex-2-col {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+	}
+	.tm-content-box.flex-2-col img {
+		width: 80%;
+		margin-top: 25%;
+		margin-left: 20%;
+	}
+	footer {
+		margin-top: 50px;
+	}
+}
+@media screen {
+/*--- TASK 2 ---*/
+	.box-bg h2:hover {
+		background-color: #87CEFA;
+		color: #fff;
+		font-weight: bold;
+		transition: all .4s;
+	}
+	.box-bg h2 {
+		transition: all .4s;
+	}
+/*--- TASK 3 ---*/
+	p:first-letter {
+		color: #87CEFA;
+		font-size: 30px;
+	}
+/*--- TASK 4 ---*/
+	.tm-sidebar, #home, #about, .blocks, #tmCarousel, section.tm-content-box, div.tm-content-box.flex-2-col:first-of-type {
+		box-shadow: 0 0 8px 4px #aaa;
+	}
+	.tm-banner {
+		box-sizing: border-box;
+		padding: 0;
+		border: 30px solid #F5F5F5;
+	}
+/*--- TASK 5 ---*/
+	section {
+		position: relative;
+	}
+	section::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid transparent;
+	border-left: 150px solid #31b0d5;
+	border-right: 150px solid transparent;
+	}
+/*--- TASK 6 ---*/
+	.carousel-item.active h2 {
+		color: #DCDCDC;
+		letter-spacing: 5px;
+	}
+/*--- TASK 7 ---*/
+	h2+p {
+		font-style: italic;
+	}
+/*--- TASK 8 ---*/
+	p:not(.tm-banner-text) {
+		line-height: 2em;
+		text-indent: 1.5em;
+	}
+/*--- TASK 9 ---*/
+	.padding-medium li a {
+		color: #000000;
+	}
+	.padding-medium li a:hover {
+		color: #87CEFA;
+		text-decoration-style: double;
+	}
+	.padding-medium li a:visited {
+		text-decoration: underline;
+	}
+	a.text::after {
+		content: "New";
+		color: #FF0000;
+		font-size: .5em;
+		vertical-align: super;
+	}
+/*--- TASK 10 ---*/
+	ul.boxes.gallery-container li:nth-of-type(even) {
+		background-color: #F5F5F5;
+	}
+	ul.boxes.gallery-container p:first-letter {
+		color: #000000;
+	}
+/*--- TASK 11 ---*/
+	.form-group {
+		position: relative;
+	}
+	.mandatory-field:after {
+		content: "*";
+		position: absolute;
+		top: 1px;
+		right: 5px;
+		color: #FF0000;
+		font-weight: bold;
+	}
+	button[type="submit"] {
+		height: 60px;
+		width: 150px;
+		background-color: #fff;
+		color: #87CEFA;
+		border: 1px solid #87CEFA;
+		border-radius: 0px;
+		transition: all .4s;
+		margin-left: calc(100% - 150px);
+	}
+
+	button[type="submit"]:hover {
+		color: #fff;
+		background-color: #87CEFA;
+		border: 1px solid #31b0d5;
+		transition: all .4s;
+	}
+	button[type="submit"].submit-btn:active {
+		color: #fff;
+		background-color: #87CEFA;
+	}
+/*--- TASK 12 ---*/
+	.tm-main-nav li {
+		transition: all .4s;
+	}
+	.tm-main-nav li:hover {
+		background-color: #F5F5F5;
+		transition: all .4s;
+	}
+}
