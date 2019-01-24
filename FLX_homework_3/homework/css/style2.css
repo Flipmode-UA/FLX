@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: #EFEFEF;
+  color: #757575;
+  width: calc(100vw - (100vw - 100%)); }
+
+.main-wrapper {
+  width: 100%; }
+
+header {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/header_background_v2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+  header .top-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    header .top-wrapper .logo img {
+      max-height: 130px; }
+    header .top-wrapper nav {
+      width: 60%; }
+      header .top-wrapper nav a {
+        display: block;
+        float: left;
+        color: #FF4000;
+        text-decoration: none;
+        text-transform: uppercase;
+        height: 40px;
+        width: 33.33%;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bold;
+        border-right: 2px solid #FFFFFF;
+        transition: all 0.3s; }
+        header .top-wrapper nav a:last-of-type {
+          border: none; }
+        header .top-wrapper nav a:hover {
+          color: #0401AC;
+          font-size: 30px;
+          text-shadow: 2px 2px 1px #FFFFFF;
+          transition: all 0.3s; }
+  header section {
+    color: #FF4000;
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    top: 50%; }
+    header section h1 {
+      text-align: center; }
+    header section a {
+      display: block;
+      height: 40px;
+      width: 180px;
+      line-height: 40px;
+      font-size: 12px;
+      text-align: center;
+      background-color: #0401AC;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 15px auto;
+      transition: all 0.3s; }
+      header section a:hover {
+        color: #0401AC;
+        background-color: #FFFFFF;
+        font-weight: bold;
+        transition: all 0.3s; }
+        header section a:hover:active {
+          border: 1px solid #0401AC;
+          background-color: #afadff; }
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0; }
+  main .toolbar {
+    padding: 15px 5px 0;
+    display: flex;
+    justify-content: flex-end; }
+    main .toolbar input {
+      height: 35px;
+      padding: 0 0 0 15px;
+      outline: none;
+      background-color: #EFEFEF;
+      outline: none;
+      border: 1px solid #DCDCDC; }
+  main #list h1 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: right; }
+  main #list article {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px; }
+    main #list article img {
+      max-width: 300px;
+      max-height: 300px; }
+    main #list article .post {
+      margin: 0 10px; }
+    main #list article .post-description {
+      color: #D8D8D8;
+      font-weight: bold;
+      padding: 5px 0 10px 5px;
+      font-size: 12px;
+      border-bottom: 1px solid #DCDCDC; }
+    main #list article h3 {
+      color: #2F4F4F;
+      text-transform: uppercase;
+      padding-top: 5px; }
+    main #list article .btn {
+      height: 35px;
+      width: 180px;
+      margin-top: 20px;
+      margin-left: calc(100% - 190px);
+      color: #FFFFFF;
+      background-color: #0401AC;
+      transition: all 0.3s;
+      border: none;
+      outline: none;
+      cursor: pointer; }
+      main #list article .btn:hover {
+        border: 1px solid #0401AC;
+        color: #0401AC;
+        background-color: #FFFFFF;
+        font-weight: bold;
+        transition: all 0.3s; }
+      main #list article .btn:active {
+        border: 1px solid #0401AC;
+        background-color: #afadff; }
+  main #about {
+    padding: 0 10px; }
+    main #about h1 {
+      text-transform: uppercase;
+      text-align: right; }
+    main #about p {
+      margin-bottom: 20px; }
+    main #about img {
+      width: 100%; }
+  main #contact {
+    padding-top: 40px; }
+    main #contact h1 {
+      text-align: right; }
+    main #contact h4 {
+      text-transform: uppercase;
+      text-align: right;
+      margin-bottom: 20px; }
+    main #contact form {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      main #contact form label {
+        display: block;
+        text-align: right;
+        color: #2F4F4F;
+        width: 49.5%;
+        margin-bottom: 15px; }
+        main #contact form label[id="textarea"] {
+          width: 100%; }
+        main #contact form label[id="submit"] {
+          width: 100%; }
+        main #contact form label input {
+          width: 100%;
+          height: 40px;
+          background-color: #EFEFEF;
+          outline: none;
+          border: 1px solid #DCDCDC;
+          padding-left: 10px; }
+          main #contact form label input[type="submit"] {
+            width: 180px;
+            height: 35px;
+            color: #FFFFFF;
+            background-color: #0401AC;
+            outline: none;
+            border: 1px solid #0401AC;
+            margin-top: 5px;
+            padding: 0;
+            transition: all 0.3s; }
+            main #contact form label input[type="submit"]:hover {
+              transition: all 0.3s;
+              color: #0401AC;
+              background-color: #FFFFFF;
+              font-weight: bold; }
+            main #contact form label input[type="submit"]:active {
+              border: 1px solid #0401AC;
+              background-color: #afadff; }
+        main #contact form label textarea {
+          width: 100%;
+          overflow: hidden;
+          background-color: #EFEFEF;
+          outline: none;
+          padding: 5px;
+          border: 1px solid #DCDCDC; }
+
+footer {
+  padding-left: 20px; }
